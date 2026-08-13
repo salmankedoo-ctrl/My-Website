@@ -10,6 +10,7 @@
       color: #ffffff;
       text-align: center;
       padding: 50px;
+      margin: 0;
     }
     h1 {
       color: #61dafb;
@@ -33,11 +34,52 @@
     button:hover {
       background-color: #4fc3e8;
     }
+    section {
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .about-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #61dafb;
+    }
+    .about-text {
+      text-align: left;
+      max-width: 400px;
+    }
+    .about-text h2 {
+      color: #61dafb;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, World! 🚀</h1>
+
+  <h1>Bonzour Moris! 🚀</h1>
   <p>This is my very first website, built with HTML and pushed with Git!</p>
   <button onclick="alert('You just clicked a button on your own website!')">Click Me</button>
+
+  <section>
+    <div class="about-container">
+      <img src="photo.jpg" alt="A photo of me">
+      <div class="about-text">
+        <h2>Moi et mo Fam</h2>
+        <p>Hi, I'm learning web development and Git! This site is my very first project — built from scratch and deployed with GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
